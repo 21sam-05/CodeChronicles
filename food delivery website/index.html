@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD DELIVERY</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*CSS RESET*/
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url('images/BG.jpg');
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+}
+
+
+
+/*css variables*/
+:root{
+    --navbar-heights: 60px;
+
+}
+
+#navbar {
+    display:flex;
+    align-items: center;
+    position: sticky;
+}
+
+#navbar ul{
+    display: flex;
+    text-decoration: black;
+
+
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style-type: none;
+    font-size: 1.2rem;
+    
+    
+
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    color: white;
+    
+}
+
+#navbar ul li a:hover {
+    
+    color: black;
+    text-decoration: underline;
+    
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('images/BG.jpg')
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration: solid;
+    
+    
+}
+
+#home p{
+    color: white;
+    text-decoration: solid;
+}
+
+
+.btn{
+    margin: 20px 9px;
+    color: white;
+    background-color:rgb(50, 47, 47);
+    padding: 6px 8px;
+    border: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:gray;
+
+
+}
+
+
+.h1{
+    margin: 0px 100px ;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{ 
+    border: 5px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background:rgb(126, 71, 71);
+    margin-bottom: 20px;
+    opacity: 0.9;
+
+    
+}
+#services .box img{ 
+   height: 300px;
+   width: 300px;
+   margin: auto;
+   display: block;
+
+}
+
+
+
+#h1{
+    margin:0px 100px;
+    font-size: 3rem;
+    text-decoration: underline;
+    background-color: ;
+    padding: 34px 30px;
+
+    
+}
+
+.client-item{
+    padding: 100px;
+    position: relative;
+}
+.client-item img{
+    height: 160px;
+   width: 160px;
+   margin: auto;
+   display: block;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client .client-item{
+    border: 5px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background:rgb(126, 71, 71);
+    margin-bottom: 20px;
+    opacity: 0.9;
+
+
+
+}
+#contact{
+    position: relative;
+    
+}
+
+#h3{
+    margin: 10px 150px;
+    font-size: 3rem;
+    padding: auto;
+    text-decoration: underline;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+
+    width:100%;
+    padding: 0.5rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+</style>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="#home" >HOME</a></li>
+            <li class="item"><a href="#services-container">SERVICES</a></li>
+            <li class="item"><a href="#client-section">ABOUT US</a></li>
+            <li class="item"><a href="#contact"> CONTACT US </a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1>WELCOME TO KHAANA KHAZANA</h1>
+        <P>At our website you will get best quality food at the most optimal prices.</P>\
+        <p>WITH HEAVY DISCOUNT ON YOUR FIRST ORDER AND ABSOLUTELY NO DELIVERY FEE</p>
+        <button class="btn">ORDER NOW</button>
+        
+
+    </section>
+    <section id="services-container">
+        <h1 class="h1">OUR SERVICES</h1>
+        <div id="services">
+            <div class="box">
+                <img src="images/pizza-2589575_640.jpg" alt="">
+                <h2 class="secondary">FOOD ORDERING</h2>
+                <p>Order whatever you wish to eat today !</p>
+            </div>
+    
+        
+        
+            <div class="box">
+                <img src="images/deliveryboy.png" alt="">
+                <h2 class="secondary">DOORSTEP DELIVERY</h2>
+                <p>Order delivered at your doorstep</p>
+            </div>
+        
+
+        
+            <div class="box">
+                <img src="images/catering-179046_640.jpg" alt="">
+                <h2 class="secondary">FOOD CATERING</h2>
+                <p>Serving delicious moments,One plate at a time</p>
+            </div>
+
+            <div class="box">
+                <img src="images/scallions-7849575_1280.jpg" alt="">
+                <h2 class="secondary">MEAL PLANNING</h2>
+                <p>Plan your meal with us !</p>
+            </div>
+        
+
+
+    </section>
+    <section id="CLIENTS">
+        <h1 id="h1">OUR CLIENTS</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="images/microsoft logo.png" alt="">
+
+            </div>
+            <div class="client-item">
+                <img src="images/logo 2.png" alt="">
+
+            </div>
+            
+            <div class="client-item">
+                <img src="images/logo3.jfif" alt="">
+    
+            </div>
+        </div>
+        
+    <section id="contact">
+        <h1 id="h3">CONTACT US</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">NAME:</label>
+                    <input type="text" name="name" id="name" placeholder="enter your name">
+
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="name" id="email" placeholder="enter your email">
+
+                </div>
+                <div class="form-group">
+                    <label for="phone">PHONE NUMBER:</label>
+                    <input type="phone" name="name" id="phone" placeholder="enter your phone number">
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+        </div>
+    </footer>
+   
+
+</body>
+</html>
