@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding :0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color:cadetblue;
+        margin : 20px;
+
+    }
+    .app{
+        background-color: #90768e;
+        width: 90%;
+        margin: 100px auto;
+        border-radius: 10px;
+        padding: 40px;
+        border: 2px solid;
+        box-shadow: 4px 4px 10px rgba(11, 11, 11, 0.5);
+
+
+
+    }
+    .app h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        border-bottom: 3px solid #333;
+        padding-bottom: 30px;
+    }
+    .quiz{
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+
+    }
+    #answer{
+        margin-top:20px;
+    }
+
+    .buttons{
+       padding: 10px; 
+       border-radius: 10px;
+       width:100%;
+       margin: 10px; 
+
+    }
+    .buttons:hover{
+        background-color: antiquewhite;
+    }
+    #next{
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease;
+    }
+    #next:hover {
+    background-color: #45a049;
+}
+
+
+</style>
+<body>
+    <div class="app">
+        <h1>WELCOME TO OUR QUIZ APP</h1>
+        <div class="quiz">
+            <h2 id="question">Question goes here</h2>
+            <div id="answer">
+                <button class="buttons">ANSWER 1</button>
+                <button class="buttons">ANSWER 2</button>
+                <button class="buttons">ANSWER 3</button>
+                <button class="buttons">ANSWER 4</button>
+
+            </div>
+            <button id="next">NEXT</button>
+
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
