@@ -7,6 +7,5 @@
 - 💬 Ask me about: Python, Java basic , ML ,Frontend Development
 - 📫 How to reach me: saxenasamridhi1921@gmail.com
 - LinkedIn profile URL : www.linkedin.com/in/samridhi-saxena-07231a28a
-
-In this repository I have shared some basic starter projects of frontend web dev 
+I have shared some basic projects of HTML , CSS AND JS which helped me boost my UI/UX knowledge and Some trained ML projects that would aid me in better understanding of ML and its applications .
 Happy to connect !!!
